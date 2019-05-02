@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="display_settings">
+        <field name="sort_order">
+            <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">SR\CategorySortOrder\Model\Attribute\Source\SortOrder</item>
+                <item name="config" xsi:type="array">
+                    <item name="formElement" xsi:type="string">select</item>
+                    <item name="label" xsi:type="string" translate="true">Sort Order</item>
+                    <item name="sortOrder" xsi:type="number">105</item>
+                    <item name="default" xsi:type="string">asc</item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+</form>
