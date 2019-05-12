@@ -34,7 +34,7 @@ class Toolbar
     public function afterGetCurrentDirection($subject, $dir)
     {
         $currentCategory = $this->registry->registry('current_category');
-        if( $currentCategory->getSortOrder()) {
+        if($currentCategory && $currentCategory->getSortOrder()) {
             $subject->setDefaultDirection($currentCategory->getSortOrder());
             if (!$this->toolbarModel->getDirection() ) {
                 $dir = $currentCategory->getSortOrder();;
